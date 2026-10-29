@@ -31,4 +31,3 @@ Open `index.html` in a browser. No build step or dependencies.
 ## Credits
 
 - No outside images, fonts or libraries: the page uses system fonts and plain HTML, CSS and JavaScript.
-- Code written with assistance from Claude (Anthropic).
