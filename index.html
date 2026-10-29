@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Half-Heard</title>
+  <meta name="description" content="A lyric that only comes into focus when you pay attention to it.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Half-Heard</h1>
+    <p class="intro">These lines are playing in the background. <strong>Press and hold</strong> a line to hear it properly, then drag it into an order. No order is correct.</p>
+  </header>
+
+  <main>
+    <div class="stage">
+      <section class="field" id="field" aria-label="Lyric lines drifting in the background"></section>
+
+      <section class="order-wrap" aria-labelledby="order-title">
+        <h2 id="order-title">Your order</h2>
+        <ol class="slots" id="slots"></ol>
+      </section>
+    </div>
+
+    <section class="reading" id="reading" hidden aria-live="polite">
+      <h2>This pass reads</h2>
+      <div class="stanza" id="stanza"></div>
+      <button type="button" id="again">Listen again</button>
+    </section>
+
+    <section class="trail-wrap" aria-labelledby="trail-title">
+      <h2 id="trail-title">Your trail</h2>
+      <p class="trail-note">Only you can see this. It is not saved or sent anywhere, and it disappears when you close the page.</p>
+      <ol class="trail" id="trail"><li class="empty">No passes yet.</li></ol>
+    </section>
+  </main>
+
+  <footer>
+    <p>Keyboard: Tab to a line, hold Enter or Space to focus it, then press Enter again to place it in the next open slot.</p>
+  </footer>
+
+  <script src="lyrics.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
